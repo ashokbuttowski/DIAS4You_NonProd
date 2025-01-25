@@ -9,6 +9,8 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "disown-opener": "off",
+    "axe/forms": "off"
   }
 }

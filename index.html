@@ -653,52 +653,45 @@
             <div class="col-md-12 col-lg-8">
                <div class="section-heading text-center">
                     <h2 class="mb-2 text-lg">Contact Us</h2>
-                    <p>Whether you have questions or you would just like to say hello, contact us.You can also call us on mobile if any payment related issues are being faced</div>
+                    <p>Whether you have questions or you would just like to say hello, Contact us.You can contact us by submitting the below form if any payment related issues are being faced.</div>
             </div>
-            <form action="https://api.web3forms.com/submit" method="POST">
-
+  
+        </div> <!-- / .row -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form class="contact-form bg-white rounded p-5" action="https://api.web3forms.com/submit" method="POST">
                 <!-- Replace with your Access Key -->
                 <input type="hidden" name="access_key" value="025c8ff0-2edb-4064-865b-5a2ae55e0f2c">
-            
-                <!-- Form Inputs. Each input must have a name="" attribute -->
-                <input type="text" name="name" required>
-                <input type="email" name="email" required>
-                <textarea name="message" required></textarea>
-            
-                <!-- Honeypot Spam Protection -->
+                    
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email id" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Enter your phone number" required>
+
+                    <!-- Honeypot Spam Protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <br>
             
                 <!-- Custom Confirmation / Success Page -->
-                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                <input type="hidden" name="redirect" value="https://dias4you.com/">
             
-                <button type="submit">Submit Form</button>
-            
-            </form>
-        </div> <!-- / .row -->
+                <button type="submit" class="btn btn-main">Submit Form <i class="ti-angle-right ml-3"></i></button>
+                
 
-        <div class="row">
-            <div class="col-lg-4 col-sm-6">
-                <div class="contact-info-block text-center mb-4">
-                    <i class="ti-headphone-alt"></i>
-                    <p class="mb-0">Contact Quickly</p>
-                    <h5>+91 9494492186</h5>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="contact-info-block text-center mb-4">
-                    <i class="ti-email"></i>
-                    <p class="mb-0">Email</p>
-                    <h5>d.n.raju21c@gmail.com</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="contact-info-block text-center mb-4">
-                    <i class="ti-location-pin"></i>
-                    <p class="mb-0">Location</p>
-                    <h5>Hyderabad</h5>
-                </div>
-            </div>
-        </div>
+                </form>
+
+
+
+        
+        
     </div>
 </section>
 
@@ -715,12 +708,19 @@
             </div>
 
             <div class="col-lg-6">
-                <div class="subscribe ">
-                    <h4 class="mb-4">Claim Free E-Book on Offline Purchase. Submit you email id here.
-                    </h4>
-                    <input type="text" class="form-control mb-4"  placeholder="Put your email address">
-
-                    <a href="https://rzp.io/rzp/Xz7ti49P" class="btn btn-main">Claim Now<i class="ti-angle-right ml-3"></i></a>  
+                <div class="subscribe">
+                    <h4 class="mb-4">Claim Free E-Book on Offline Purchase</h4>
+                    <p class="mb-4">Submit your email ID here. If e-book is not received within 24 hours, feel free to contact us using the Contact Us form.</p>
+                    
+                    <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="025c8ff0-2edb-4064-865b-5a2ae55e0f2c">
+                        <div class="form-group d-flex">
+                            <input type="email" class="form-control" placeholder="Enter your email id" required>
+                            <br>
+                            <button type="submit" class="btn btn-main mt-3">Claim Now <i class="ti-angle-right ml-3"></i></button>
+                        </div>
+                        <input type="hidden" name="redirect" value="https://dias4you.com/">
+                    </form>
                 </div>
             </div>
         </div> 
